@@ -1,0 +1,250 @@
+.about-page {
+  min-height: 100vh;
+  background: #f8fafc; /* Light clean background */
+  overflow-x: hidden;
+}
+
+/* Hero Section - Fresh & Inviting */
+.about-hero {
+  position: relative;
+  padding: 140px 24px 100px;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(240, 249, 240, 0.9), rgba(232, 245, 233, 0.9));
+  border-bottom: 1px solid rgba(76, 175, 80, 0.15);
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 450px;
+  background: radial-gradient(circle at center, rgba(129, 199, 132, 0.18), transparent 70%);
+  pointer-events: none;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 24px;
+  line-height: 1.1;
+  color: #1b5e20; /* Deep green */
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #2e7d32 0%, #4caf50 50%, #81c784 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-subtitle {
+  font-size: 1.6rem;
+  color: #2e7d32;
+  font-weight: 500;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Main Content */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.about-main {
+  background: white;
+  border-radius: 24px;
+  padding: 60px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.about-section {
+  margin-bottom: 80px;
+  color: #333;
+  line-height: 1.8;
+}
+
+.about-section h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #1b5e20;
+  margin-bottom: 24px;
+  text-align: center;
+  position: relative;
+}
+
+.about-section h2::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  margin: 16px auto 0;
+  border-radius: 3px;
+}
+
+.about-section p {
+  font-size: 1.18rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Mission Grid */
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  margin: 40px 0;
+}
+
+.mission-card {
+  background: #f8fafc;
+  border: 1px solid #e0f2e9;
+  border-radius: 20px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(76, 175, 80, 0.15);
+  border-color: #81c784;
+}
+
+.mission-icon {
+  font-size: 3.8rem;
+  margin-bottom: 20px;
+}
+
+.mission-card h3 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #1b5e20;
+  margin-bottom: 12px;
+}
+
+.mission-card p {
+  color: #555;
+  font-size: 1.05rem;
+}
+
+/* Features List */
+.features-list {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.features-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px dashed #e0f2e9;
+  font-size: 1.15rem;
+}
+
+.features-list li:last-child {
+  border-bottom: none;
+}
+
+.check {
+  font-size: 30px;
+  font-weight: 900;
+  color: #43a047;
+  background: rgba(67, 160, 71, 0.1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.features-list strong {
+  color: #1b5e20;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.features-list span {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* CTA Section */
+.about-cta {
+  text-align: center;
+  padding: 60px 0 20px;
+}
+
+.about-cta h2 {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #1b5e20;
+  margin-bottom: 20px;
+}
+
+.about-cta p {
+  font-size: 1.3rem;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #43a047 0%, #4caf50 100%);
+  color: white;
+  padding: 20px 52px;
+  border-radius: 16px;
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(67, 160, 71, 0.3);
+  transition: all 0.4s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 20px 50px rgba(67, 160, 71, 0.45);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 110px 20px 80px;
+  }
+
+  .about-main {
+    padding: 40px 20px;
+    border-radius: 16px;
+  }
+
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features-list li {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .cta-button {
+    padding: 18px 40px;
+    font-size: 1.2rem;
+  }
+}
